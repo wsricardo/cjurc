@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Juros Compostos com Depósito</title>
+    <!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.34.0.min.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="head">
+            <h1>CJurComD</h1>
+            <span class="app-subtitle">Calculadora Juros Compostos com Depósito</span>
+        </div>
+
+        <div class="output">
+            <div id="plotview"></div>
+            <div id="data-view">
+                <span  ><b>Valor:</b> R$<span id="dvalue">0</span></span>
+                <span><b>Tempo:</b> <span id="dmouth">0</span></span>
+            </div>
+        </div>
+
+        <div class="input">
+            
+            <div class="in1">
+                <span>Valor Inicial</span>
+                <input type="number"   value="0" name="montante" id="inputValue"></div>
+            
+            <div class="in2">
+                <span>Tempo(meses)</span>
+                <input type="number"  value="0" name="" id="inputTime"></div>
+            
+            <div class="in3">
+                <span>Taxa</span>
+                <input type="number"  value="0" name="" id="inputTax"></div>
+            
+            <div class="in4">
+                <span>Deposito</span>
+                <input type="number"  value="0" id="inputDeposit">
+            </div>
+
+            <div class="in5"><button type="button" onclick="compute();">Calcular</button></div>
+            
+
+        </div>
+
+        <div class="foot"><a href="https://wsricardo.blogspot.com">Blog</a> </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
