@@ -35,7 +35,7 @@ function fjurc( m0, taxa, tempo, d ){
     if ( tempo == 0 ) {
         return y;
     } else {
-        return fjurc(y , taxa, tempo - 1, d )*(1+taxa/100)+d;
+        return fjurc(y , taxa, tempo, d )*(1+taxa/100)+d;
 
     }
 }
